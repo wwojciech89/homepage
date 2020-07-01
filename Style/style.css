@@ -1,0 +1,274 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+/* Header */
+
+.wrapper {
+    text-align: center;
+    padding-top: 1px;
+}
+
+.wrapper__logo {
+    height: 50px;
+    margin-top: 20px;
+}
+
+/* Social Media*/
+
+.media-list {
+    position: absolute;
+    right: 50px;
+    list-style: none;
+    top: 5px;
+}
+
+.sm-link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+/* Navigation */
+
+.navigation {
+    text-align: center;
+    color: black;
+}
+
+.navigationList {
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.navigationList-position {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.navigationList-position:hover {
+    border-bottom: 1px solid;
+}
+
+.navigationList-link {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation List for "Prace" */
+
+.dropDownList {
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    padding: 0;
+    width: 200px;
+    z-index: 5;
+    opacity: 0;
+    left: -9999px;
+    
+}
+
+.dropDownList-item {
+    font-size: 13px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    font-weight: normal;
+    margin: 10px;
+    color: black;
+}
+
+.dropDownList-item:hover {
+    text-decoration: underline;
+}
+
+.navigationList-position:hover .dropDownList {
+    opacity: 1;
+    transition: ease 0.5s;
+    margin-left: -30px;
+    left: inherit;
+}
+
+/* Main Page*/
+
+.main__title {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 80px;
+    font-weight: normal;
+    margin-top: 0;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 25%);
+    grid-gap: 7px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.container__element {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+}
+
+.container__element:hover {
+    transition: 1s;
+    color: white;
+}
+
+.container__image {
+    display: inline-block;
+    opacity: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.container__image:hover {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+h3 {
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    border: 1px solid;
+    color: white;
+    background-color: transparent;
+    padding: 15px 10px;
+    position: relative;
+    top: 50%;
+}
+
+.alternative {
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    border: 1px solid;
+    color: white;
+    background-color: transparent;
+    padding: 15px 10px;
+    position: relative;
+    top: 50%;
+    left: 35%;
+}
+
+.container__element-title {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    height: 607px;
+    width: 607px;
+}
+
+.container__element-right {
+    grid-column: 3/5;
+    width: 607px;
+    height: 300px;
+}
+
+.container__element-left {
+    grid-column: 1/3;
+    width: 607px;
+    height: 300px;
+}
+
+.container__image-wide {
+    display: inline-block;
+    opacity: 0;
+    background-color: black;
+    height: 300px;
+    width: 607px;
+}
+
+.container__image-wide:hover {
+    transition: 1s;
+    color: white;
+    opacity: 0.7;
+}
+
+/* Footer */
+
+/* Logo */
+
+.bottom__container {
+    height: 150px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bottom__logo {
+    flex-basis: 350px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.bottom__logo-position {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+/* Contact */
+
+.bottom__contact {
+    flex-basis: 350px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.bottom__list {
+    list-style-type: none;
+}
+
+/* Follow Me */
+
+.bottom__follow {
+    flex-basis: 350px;
+}
+
+.follow__logo {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.logo__option {
+    width: 100%;
+    text-align: center;
+}
+
+.follow__logo-position {
+    padding: 10px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 15px;
+}
