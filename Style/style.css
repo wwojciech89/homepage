@@ -80,7 +80,6 @@ html {
     z-index: 5;
     opacity: 0;
     left: -9999px;
-    
 }
 
 .dropDownList-item {
@@ -99,7 +98,7 @@ html {
 
 .navigationList-position:hover .dropDownList {
     opacity: 1;
-    transition: ease 0.5s;
+    transition: ease 0.6s;
     margin-left: -30px;
     left: inherit;
 }
@@ -112,22 +111,39 @@ html {
     padding-top: 80px;
     font-weight: normal;
     margin-top: 0;
-    
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat( auto-fit, 25%);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
     grid-gap: 7px;
-    max-width: 1200px;
+    max-width: 1221px;
     margin: auto;
-    
+}
+
+@media (max-width: 1237px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        grid-gap: 7px;
+        max-width: 914px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 929px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 300px));
+        grid-gap: 7px;
+        width: 607px;
+        margin: auto;
+    }
 }
 
 .container__element {
     height: 300px;
-    width: 300px;
-    position: relative;
+    min-width: 300px;
     background-color: black;
     opacity: 1;
     text-align: center;
@@ -139,12 +155,22 @@ html {
 }
 
 .container__image {
-    display: inline-block;
     opacity: 0;
     background-color: black;
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 929px) {
+    .container__image-change {
+        height: 300px;
+        min-width: 300px;
+        background-color: black;
+        opacity: 1;
+    }
+}
+
+/* dodać background image 300 x 300 z wyśrodkowaniem ^ */
 
 .container__image:hover {
     opacity: 0.6;
@@ -177,22 +203,54 @@ h3 {
 }
 
 .container__element-title {
-    grid-column: 2/4;
-    grid-row: 1/3;
+    grid-column: span 2;
+    grid-row: span 2;
     height: 607px;
-    width: 607px;
+    width: 100%;
+}
+
+@media (max-width: 929px) {
+    .container__element-title {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 300px;
+        width: 300px;
+        background-color: black;
+        opacity: 1;
+        text-align: center;
+    }
 }
 
 .container__element-right {
-    grid-column: 3/5;
-    width: 607px;
-    height: 300px;
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:929px) {
+    .container__element-right {
+        grid-column: span 1;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 929px) {
+    .container__element-right {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 300px;
+        width: 300px;
+        background-color: black;
+        opacity: 1;
+        text-align: center;
+    }
 }
 
 .container__element-left {
-    grid-column: 1/3;
-    width: 607px;
-    height: 300px;
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
 }
 
 .container__image-wide {
@@ -200,8 +258,19 @@ h3 {
     opacity: 0;
     background-color: black;
     height: 300px;
-    width: 607px;
+    width: 100%;
 }
+
+@media (max-width: 929px) {
+    .container__image-change {
+        height: 300px;
+        width: 300px;
+        background-color: black;
+        opacity: 0;
+    }
+}
+
+/* dodać background image 300 x 300 z wyśrodkowaniem ^ */
 
 .container__image-wide:hover {
     transition: 1s;
