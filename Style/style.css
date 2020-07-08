@@ -19,6 +19,79 @@ html {
     margin-top: 20px;
 }
 
+/* Hamburger Menu*/
+
+.hamburger {
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    left: 8vh;
+    top: 3vh;
+    position: absolute;
+    padding: 5px;
+    outline: none;
+    z-index: 100;
+}
+
+.hamburger__box {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger__inner-top {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    transform: translateY(-50%);
+    content: '';
+    transition: ease-in-out .3s .3s;
+}
+
+.hamburger-active .hamburger__inner-top {
+    transform: translateY(17px) rotate(-45deg)
+}
+
+.hamburger__inner {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    transition: ease-in-out .3s .3s;
+}
+
+.hamburger-active .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger__inner-bottom {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    transform: translateY(-50%);
+    content: '';
+    transition: ease-in-out .3s .3s;
+}
+
+.hamburger-active .hamburger__inner-bottom {
+    transform: translateY(-21px) rotate(45deg)
+}
+
+/* Hamburger Menu End*/
+
 /* Social Media*/
 
 .media-list {
@@ -102,7 +175,6 @@ html {
 
 .navigationList-position:hover .dropDownList {
     opacity: 1;
-    
     margin-left: -30px;
     left: inherit;
 }
