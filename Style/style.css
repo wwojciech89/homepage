@@ -149,6 +149,7 @@ html {
     cursor: pointer;
     padding: 0;
 }
+
 .sideBar__link:hover {
     background-color: rgb(44, 43, 43);
     transition: .3s .1s ease-in-out;
@@ -436,6 +437,7 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 1px;
 }
 
 .bottom__logo {
@@ -487,4 +489,24 @@ h3 {
 h4 {
     text-align: center;
     font-size: 15px;
+}
+@media (max-width: 1237px) {
+    .bottom__contact {
+        font-size: 25px;
+    }
+    .bottom__container {
+        padding-bottom: 225px;
+    }
+    .main__title {
+        font-size: 30px;
+    }
+    .follow__logo {
+        height: 74px;
+        width: 74px;
+    }
+    .sm-link {
+        height: 64px;
+        width: 64px;
+        margin-right: 20px;
+    }
 }

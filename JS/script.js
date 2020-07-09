@@ -7,6 +7,3 @@ const handleClick = () => {
 }
 
 hamburger.addEventListener("click", handleClick);
-
-
-console.log("cześć")
