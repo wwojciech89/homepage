@@ -27,12 +27,25 @@ html {
     cursor: pointer;
     border: 0;
     margin: 0;
-    left: 8vh;
-    top: 3vh;
+    left: 4vh;
+    top: 4vh;
     position: absolute;
     padding: 5px;
     outline: none;
     z-index: 100;
+    transition: ease-in-out .3s .2s;
+    position: fixed;
+    opacity: 0;
+}
+
+@media (max-width: 1237px) {
+    .hamburger {
+        opacity: 1;
+    }
+}
+
+.hamburger-active {
+    transform: translateX(250px);
 }
 
 .hamburger__box {
@@ -51,7 +64,7 @@ html {
     top: 20%;
     transform: translateY(-50%);
     content: '';
-    transition: ease-in-out .3s .3s;
+    transition: ease-in-out .3s .2s;
 }
 
 .hamburger-active .hamburger__inner-top {
@@ -67,7 +80,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     content: '';
-    transition: ease-in-out .3s .3s;
+    transition: ease-in-out .3s .2s;
 }
 
 .hamburger-active .hamburger__inner {
@@ -83,11 +96,62 @@ html {
     top: 80%;
     transform: translateY(-50%);
     content: '';
-    transition: ease-in-out .3s .3s;
+    transition: ease-in-out .3s .2s;
 }
 
 .hamburger-active .hamburger__inner-bottom {
     transform: translateY(-21px) rotate(45deg)
+}
+
+/* Hamburger Menu Sidebar*/
+
+.sideBar {
+    height: 100vh;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    transition: ease-in-out .3s .2s;
+    z-index: 100;
+    position: fixed;
+}
+
+.sideBar-active {
+    transform: translateX(0px);
+}
+
+.sideBar__list {
+    list-style: none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sideBar__item {
+    height: 25vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.sideBar__link {
+    background-color: black;
+    border-style: none;
+    color: white;
+    z-index: 101;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.sideBar__link:hover {
+    background-color: rgb(44, 43, 43);
+    transition: .3s .1s ease-in-out;
 }
 
 /* Hamburger Menu End*/
@@ -124,6 +188,13 @@ html {
     position: fixed;
     z-index: 10;
     background-color: white;
+    opacity: 1;
+}
+
+@media (max-width: 1237px) {
+    .navigationList {
+        opacity: 0;
+    }
 }
 
 .navigationList-position {
