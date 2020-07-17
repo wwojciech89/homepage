@@ -191,7 +191,6 @@ html {
     opacity: 1;
     padding: 10px 0px;
     margin: 0px;
-   
 }
 
 .navigationList-position {
@@ -430,11 +429,38 @@ h4 {
 /* Contact page */
 
 .contactForm {
-    transform: translateX(45%);
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.contactForm__holder {
+.contactForm__liner {
     padding: 5px;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.contactForm__wide {
+    padding: 5px;
+    border: 1px solid black;
+    width: 60%;
+    height: 340px;
+    resize: none;
+}
+
+.contactForm__button {
+    padding: 5px;
+    border: 1px solid black;
+    width: 70px;
+    margin-left: 50%;
+    background-color: white;
+}
+
+.contactForm__button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 /* Media Queris */

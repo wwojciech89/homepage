@@ -106,20 +106,20 @@
         <form class="contactForm" action="" method="post">
             <p>
                 <label>
-                    <input class="contactForm__holder" name="name" placeholder="imię" autofocus>
+                    <input class="contactForm__liner" name="name" placeholder="imię" autofocus required>
                 </label>
             </p>
             <p>
                 <label>
-                    <input class="contactForm__holder" type="email" name="email" placeholder="e-mail">
+                    <input class="contactForm__liner" type="email" name="email" placeholder="e-mail" required>
                 </label>
             </p>
             <p>
                 <label>
-                    <textarea name="information">treść wiadomości, wstępna data sesji to kluczowa informacja ;)
-                        </textarea>
+                    <textarea class="contactForm__wide" name="information" required placeholder="Tekst wiadomośc, data jest kluczową informacją ;)"></textarea>
                 </label>
             </p>
+            <button class="contactForm__button">Wyślij</button>
         </form>
 
 
