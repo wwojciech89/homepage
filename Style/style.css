@@ -9,14 +9,21 @@ html {
 
 /* Header */
 
+.background {}
+
 .wrapper {
+    position: fixed;
+    background-color: rgb(226, 214, 245);
     text-align: center;
-    padding-top: 1px;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0;
 }
 
 .wrapper__logo {
     height: 50px;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 /* Hamburger Menu*/
@@ -155,7 +162,7 @@ html {
 /* Social Media*/
 
 .media-list {
-    position: absolute;
+    position: fixed;
     right: 50px;
     list-style: none;
     top: 5px;
@@ -178,13 +185,13 @@ html {
 }
 
 .navigationList {
-    padding: 0px;
-    position: absolute;
     width: 100%;
     position: fixed;
-    z-index: 10;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     opacity: 1;
+    padding: 10px 0px;
+    margin: 0px;
+   
 }
 
 .navigationList-position {
@@ -245,9 +252,9 @@ html {
 .main__title {
     text-align: center;
     font-size: 18px;
-    padding-top: 80px;
+    padding-top: 150px;
     font-weight: normal;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .container {
@@ -418,6 +425,20 @@ h4 {
     font-size: 15px;
 }
 
+/* End of front page */
+
+/* Contact page */
+
+.contactForm {
+    transform: translateX(45%);
+}
+
+.contactForm__holder {
+    padding: 5px;
+}
+
+/* Media Queris */
+
 @media (max-width: 1237px) {
     .bottom__contact {
         font-size: 25px;
@@ -433,8 +454,8 @@ h4 {
         width: 74px;
     }
     .sm-link {
-        height: 64px;
-        width: 64px;
+        height: 40px;
+        width: 40px;
         margin-right: 20px;
     }
     .hamburger {
@@ -507,7 +528,6 @@ h4 {
         opacity: 1;
         text-align: center;
     }
-    
 }
 
 @media (max-width: 730px) {
