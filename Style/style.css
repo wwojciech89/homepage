@@ -466,6 +466,13 @@ h4 {
 
 /* Sessions Page */
 
+.session__title {
+    margin: 70px 0px 10px;
+    font-size: 17px;
+    
+
+}
+
 .session__container {
     margin: auto;
     text-align: center;
