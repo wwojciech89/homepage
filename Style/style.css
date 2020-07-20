@@ -358,6 +358,9 @@ h3 {
 .bottom {
     box-sizing: content-box;
     background-color: rgb(240, 240, 240);
+    position: relative;
+    bottom: -26vh;
+    
 }
 
 .bottom__container {
@@ -432,7 +435,7 @@ h4 {
     margin: auto;
     max-width: 700px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .contactForm__liner {
