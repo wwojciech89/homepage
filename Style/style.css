@@ -462,6 +462,7 @@ h4 {
     color: white;
     cursor: pointer;
 }
+
 /* End of Contact page */
 
 /* Sessions Page */
@@ -469,19 +470,18 @@ h4 {
 .session__title {
     margin: 70px 0px 10px;
     font-size: 17px;
-    
-
 }
 
 .session__container {
     margin: auto;
     text-align: center;
 }
-    
+
 .session__one {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .session__picture--landscape {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -494,13 +494,7 @@ h4 {
     margin-right: 10px;
 }
 
-
-
-
-
-
 /* End of Session page */
-
 
 /* Media Queris */
 
