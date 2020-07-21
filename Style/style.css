@@ -359,7 +359,6 @@ h3 {
     box-sizing: content-box;
     background-color: rgb(240, 240, 240);
     position: relative;
-    bottom: -26vh;
     
 }
 
@@ -387,6 +386,14 @@ h3 {
 }
 
 /* Contact */
+
+.contact__paragraph {
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+}
 
 .bottom__contact {
     flex-basis: 350px;
