@@ -35,7 +35,7 @@ html {
     border: 0;
     margin: 0;
     left: 4vh;
-    top: 1vh;
+    top: 0.6vh;
     position: absolute;
     padding: 5px;
     outline: none;
@@ -562,6 +562,10 @@ h4 {
 @media (max-width: 1090px) {
     .bottom__container {
         padding-bottom: 220px;
+    }
+    .session__picture--landscape {
+        height: 480px;
+        width: 720px;
     }
 }
 
