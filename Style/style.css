@@ -473,6 +473,17 @@ h4 {
     cursor: pointer;
 }
 
+.textContainer {
+    width: 700px;
+    text-align: left;
+    margin: auto;
+    line-height: 23px;
+}
+.contact__link {
+    list-style: none;
+    color: black;
+}
+
 /* End of Contact page */
 
 /* Sessions Page */
