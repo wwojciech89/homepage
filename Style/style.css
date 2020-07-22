@@ -646,6 +646,15 @@ h4 {
         opacity: 1;
         text-align: center;
     }
+    p {
+        font-size: 19px;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 23px
+    }
 }
 
 @media (max-width: 730px) {
