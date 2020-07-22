@@ -445,6 +445,30 @@ h4 {
 
 /* End of front page */
 
+/* About page */
+
+.profilePicture {
+    height: 700px;
+    width: 700px;
+}
+
+.profilePicture--other {
+    height: 500px;
+    width: 700px;
+}
+
+.profilePicture--istambul {
+    height: 730px;
+    width: 700px;
+}
+
+.profilePicture--zakopane {
+    height: 933px;
+    width: 700px;
+}
+
+/* About page  */
+
 /* Contact page */
 
 .contactForm {
