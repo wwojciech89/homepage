@@ -448,26 +448,28 @@ h4 {
 /* About page */
 
 .profilePicture {
-    height: 700px;
-    width: 700px;
+    height: 400px;
+    width: 400px;
+    margin: 0 251px;
 }
 
 .profilePicture--other {
-    height: 500px;
-    width: 700px;
+    height: 285px;
+    width: 400px;
 }
 
 .profilePicture--istambul {
-    height: 730px;
-    width: 700px;
+    height: 400px;
+    width: 383px;
+    margin-left: 113px;
 }
 
 .profilePicture--zakopane {
-    height: 933px;
-    width: 700px;
+    height: 400px;
+    width: 300px;
 }
 
-/* About page  */
+/* About page end  */
 
 /* Contact page */
 
@@ -507,10 +509,13 @@ h4 {
 }
 
 .textContainer {
-    width: 700px;
+    width: 900px;
     text-align: left;
     margin: auto;
     line-height: 23px;
+    text-align: justify;
+    text-justify: inter-word;
+    position: inherit;
 }
 
 .contact__link {
@@ -595,7 +600,7 @@ h4 {
 
 @media (max-width: 1090px) {
     .bottom__container {
-        padding-bottom: 220px;
+        padding-bottom: 235px;
     }
     .session__picture--landscape {
         height: 480px;
@@ -615,11 +620,10 @@ h4 {
         padding-top: 90px;
     }
     .contactForm__button {
-    width: 90px;
-    height: 50px;
-    margin-left: 47%;
-    font-size: 23px;
-    
+        width: 90px;
+        height: 50px;
+        margin-left: 47%;
+        font-size: 23px;
     }
 }
 
@@ -666,11 +670,8 @@ h4 {
         opacity: 1;
         text-align: center;
     }
-    
-
-@media (max-width: 730px) {
-    .bottom__container {
-        padding-bottom: 320px;
+    @media (max-width: 730px) {
+        .bottom__container {
+            padding-bottom: 320px;
+        }
     }
-  
-}
